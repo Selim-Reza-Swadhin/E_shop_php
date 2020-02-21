@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>flip and flex animation-S WoRld TechnoLogy</title>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" media="all" />
+	<style type="text/css">
+	
+	body{
+		background-color:#fff;
+		align-items:center;
+		justify-content:center;
+		display:flex;
+		font-family:arial;
+		height:100vh;
+		}
+	
+	.cardBox{
+			perspective:500px;
+			margin:15px;	
+			}
+			
+	.card{
+		position:relative;
+		width:150px;
+		height:150px;
+		background:#fff;
+		transform-style:preserve-3d;
+		transition:0.5s ease;
+		box-shadow: 0 30px 30px rgba(0,0,0, 0.5);
+		}
+	
+	.facebook{background:#3b5998;}
+	.twitter{background:#00aced;}
+	.googleplus{background:#dd4b39;}
+	.youtube{background:#dd4b39;}
+	.linkedin{background:#0077b5;}
+	.instagram{background:#e4405f;}
+	
+	.card-front, .card-back{
+							position:absolute;
+							top:0;
+							left:0;
+							width:150px;
+							height:150px;
+							color:#fff;
+							backface-visibility:hidden;
+							}
+	.card-front{
+				display:flex;
+				font-size:40px;
+				align-items:center;
+				justify-content:center;
+				}	
+	
+	.card-back{
+			display:flex;
+			font-size:30px;
+			align-items:center;
+			justify-content:center;	
+			}
+	
+	.cardBox:hover .card{
+						transform:rotateY(180deg);
+						}	
+						
+	.cardBox .card a{
+					text-decoration:none;
+						}
+	.card-back{
+			transform:rotateY(180deg);
+			}
+
+	
+	</style>
+</head>
+<body>
+	<div class="cardBox">	
+		<div class="card facebook">	
+			<a href="#" class="card-front"><i class="fa fa-facebook"></i></a>
+			<a href="file:///D:/Image_Slider/slideshow_js.html" class="card-back">Facebook</a>	
+		</div>	
+	</div>	
+	
+	
+	<div class="cardBox">	
+		<div class="card twitter">	
+			<a href="#" class="card-front"><i class="fa fa-twitter"></i></a>
+			<a href="#" class="card-back">Twitter</a>	
+		</div>	
+	</div>	
+	
+	<div class="cardBox">	
+		<div class="card googleplus">	
+			<a href="#" class="card-front"><i class="fa fa-google-plus"></i></a>
+			<a href="#" class="card-back">Google</a>	
+		</div>	
+	</div>
+	
+	<div class="cardBox">	
+		<div class="card googleplus">	
+			<a href="#" class="card-front"><i class="fa fa-youtube"></i></a>
+			<a href="#" class="card-back">YouTube</a>	
+		</div>	
+	</div>
+	
+	<div class="cardBox">	
+		<div class="card twitter">	
+			<a href="#" class="card-front"><i class="fa fa-linkedin"></i></a>
+			<a href="#" class="card-back">LinkedIn</a>	
+		</div>	
+	</div>	
+	
+	<div class="cardBox">	
+		<div class="card instagram">	
+			<a href="#" class="card-front"><i class="fa fa-instagram"></i></a>
+			<a href="#" class="card-back">Instagram</a>	
+		</div>	
+	</div>
+	
+	
+</body>
+</html>
